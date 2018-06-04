@@ -25,9 +25,9 @@ module Hanami
     #
     #   class Account < Hanami::Entity
     #     attributes do
-    #       attribute :id,         Types::Int
+    #       attribute :id,         Types::Integer
     #       attribute :name,       Types::String
-    #       attribute :codes,      Types::Array(Types::Int)
+    #       attribute :codes,      Types::Array(Types::Integer)
     #       attribute :users,      Types::Array(User)
     #       attribute :email,      Types::String.constrained(format: /@/)
     #       attribute :created_at, Types::DateTime
@@ -130,9 +130,9 @@ module Hanami
           #
           #   class Account < Hanami::Entity
           #     attributes do
-          #       attribute :id,         Types::Int
+          #       attribute :id,         Types::Integer
           #       attribute :name,       Types::String
-          #       attribute :codes,      Types::Array(Types::Int)
+          #       attribute :codes,      Types::Array(Types::Integer)
           #       attribute :users,      Types::Array(User)
           #       attribute :email,      Types::String.constrained(format: /@/)
           #       attribute :created_at, Types::DateTime

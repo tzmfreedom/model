@@ -18,7 +18,7 @@ module Hanami
 
           String   = Types::Optional::Coercible::String
 
-          Int      = Types::Strict::Nil | Types::Int.constructor(Coercions.method(:int))
+          Int      = Types::Strict::Nil | Types::Integer.constructor(Coercions.method(:int))
           Float    = Types::Strict::Nil | Types::Float.constructor(Coercions.method(:float))
           Decimal  = Types::Strict::Nil | Types::Float.constructor(Coercions.method(:decimal))
 
@@ -37,7 +37,7 @@ module Hanami
           # @api private
           MAPPING = {
             Types::String.pristine            => Schema::String,
-            Types::Int.pristine               => Schema::Int,
+            Types::Integer.pristine           => Schema::Int,
             Types::Float.pristine             => Schema::Float,
             Types::Decimal.pristine           => Schema::Decimal,
             Types::Bool.pristine              => Schema::Bool,
